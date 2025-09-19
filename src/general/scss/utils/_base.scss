@@ -1,0 +1,21 @@
+
+@import 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    letter-spacing: 0;
+    background-color: #F9F9F9;
+}
+
+.container{
+    margin:0 auto;
+    padding: 0 15px;
+
+    max-width: 1250px;
+    width:100%;
+}

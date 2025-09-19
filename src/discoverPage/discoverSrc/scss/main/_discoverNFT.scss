@@ -1,0 +1,175 @@
+
+@use "/src/general/scss/utils";
+@use "/src/general/scss/utils/animation" as anim;
+
+.main {
+    margin-top:120px;
+}
+
+.discoverNFT {
+    font-size:1rem;
+}
+
+.discover__title {
+    @include utils.getFont(Poppings, 2.8em, 600, 0.67);
+    color:utils.$almost-black;
+
+    text-align: center;
+}
+.discover__options {
+    margin-top:20px;
+
+    display:flex;
+    justify-content: center;
+
+    gap:3em;
+}
+.discover__options-button {
+    margin-top: 20px;
+
+    @include utils.getFont(Manrope, 1em , 700, 1.5);
+    
+    padding:0.6em 1.6em;
+
+    border: 3px solid utils.$almost-black;
+    border-radius: 14px;
+
+    &:hover{
+        color:#535353;
+    }
+
+    @each $item in tablet, voice, dollar{
+        &--#{$item}{
+            &::before{
+                content: url("/mainPage/main/market/#{$item}.svg");
+
+                margin-right:5px;
+                vertical-align:middle;
+            }
+        }
+    }
+}
+
+.discover__menu {
+    margin-top: 80px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 17em);
+    justify-content: center;
+
+    gap: 3.25em 2.43em;
+}
+
+//CARD
+
+.card {
+    width:17em;
+
+    padding:0.85em 0.85em 1.25em 0.85em;
+
+    background-color: #fff;
+    border-radius: 1.15em;
+
+    box-shadow: 2px 4px 35px 0px rgba(38, 62, 81, 0.21);
+}
+
+.card__img{
+
+    position: relative;
+    
+    & img{
+        border-radius: 1.15em;
+
+        width:15em;
+        aspect-ratio: 1 / 1;
+    }
+
+    .card__img-time{
+        @include utils.getFont(Poppins, 0.8em, 500, 1.5, 0.12px);
+
+        position:absolute;
+
+        top:1em;
+        right:1em;
+
+        padding: 6px 12px;
+
+        background-color: #1C1D2059;
+        color:#fff;
+        border-radius: 8px;
+    }
+}
+
+.card__title{
+        @include utils.getFont(Poppins, 1.31em, 600, 1.4);
+        
+        color: #141416;
+
+        margin-block: 0.9em 0.67em;
+}
+
+.card__content{
+    display:flex;
+    justify-content: space-between;
+}
+
+.card__content-group{
+    display:flex;
+    flex-direction: column;
+
+    &__inscription{
+        @include utils.getFont(Poppins, 0.875em, 400, 1.5);
+
+        color: #94A3B8;
+    }
+
+    &__bid{
+        @include utils.getFont(Poppins, 1.05em, 600, 1.4);
+        color: utils.$almost-black;
+
+        margin-top: 0.5em;
+
+        &:before{
+            content: url("/mainPage/main/market/current_bid.svg");
+
+            margin-right:5px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.card__content-button{
+    @include utils.getFont(Poppins, 0.875em, 600, 1.5, 0.12px);
+
+    background-color: utils.$almost-black;
+    color: #fff;
+
+    padding: 1em 1.56em;
+
+    border-radius: 0.75em;
+    border: currentColor solid 1px;
+
+    vertical-align: middle;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+
+    transition: 0.4s ease;
+
+    &:hover{
+        background-color: #fff;
+        color: utils.$almost-black;
+    }
+}
+
+.discover__loading{
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+

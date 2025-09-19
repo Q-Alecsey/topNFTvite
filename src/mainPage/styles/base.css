@@ -1,0 +1,29 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    letter-spacing: 0;
+    background-color: #F9F9F9;
+}
+
+:root{
+    --almost-black:#141416;
+    --default-font-size:0.89rem;
+}
+
+.container{
+    margin:0 auto;
+    padding: 0 15px;
+
+    max-width: 1250px;
+    width:100%;
+}
+
+/* @media (max-width:600px){
+
+    .container{
+        padding:0 7px;
+    }
+} */

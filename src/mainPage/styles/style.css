@@ -1,0 +1,32 @@
+
+@import url("./reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url("./base.css");
+
+@import url("./header.css");
+
+@import url("./popupWindow.css");
+
+@import url("./mainMenu.css");
+
+@import url("./weeklySwiper.css");
+@import url("./weeklyViewed.css");
+
+@import url("./topCollections.css");
+
+@import url("./marketplace.css");
+
+@import url("./innerCollector.css");
+
+@import url("./community.css");
+
+@import url("./questions.css");
+
+@import url("./banner.css");
+
+@import url("./footer.css")

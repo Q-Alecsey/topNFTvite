@@ -1,0 +1,261 @@
+
+
+.innerCollector{
+    font-size: 1rem;
+    background-color: #ffffff;
+
+    margin-top:100px; 
+    padding-top:60px;
+}
+
+.innerCollectorFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerCollector__image{
+    font-size:1rem;
+
+    width:48em;
+    height:42em;
+}
+
+.innerCollector__points-title{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 2.8em;
+    line-height: 1.2;
+    text-transform: capitalize;
+
+    margin-bottom:1.5em;
+
+    color:rgb(204, 204, 204);
+}
+
+.innerCollector__points-title{
+    white-space: nowrap;
+}
+
+.innerCollector__points-title__special{
+    color:var(--almost-black);
+}
+
+.innerCollector__points-content{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2;
+
+    color:var(--almost-black);
+}
+
+.innerCollector__points-content::before{
+    content:url("/public/mainPage/main/innerCollector/icon.svg");
+
+    margin-right: 8px;
+
+    vertical-align: sub;
+}
+
+.innerCollector__points-button{
+    display:block;
+
+    width:10em;
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: capitalize;
+
+    background-color:var(--almost-black);
+    color:#ffffff;
+
+    padding: 1.12em 0.9em 1.12em 1.3em;
+    border-radius: 1em;
+    border: var(--almost-black) solid 1px;
+
+    margin-top:4.4em;
+
+    white-space:nowrap;
+
+    transition:0.5s;
+}
+
+.buttonLess > a{
+    margin-top:2em;
+}
+
+.innerCollector__points-button__arrow{
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.innerCollector__points-button__arrow *{
+    transition: 0.5s;
+}
+
+.innerCollector__points-button:hover{
+   background-color: #ffffff;
+   color:var(--almost-black);
+}
+
+.innerCollector__points-button:hover 
+.innerCollector__points-button__arrow *{
+    
+    stroke:var(--almost-black);
+}
+
+/* Additionaly for js */
+
+.buttonLess{
+    display:none;
+}
+
+.addCenterAlignment{
+    text-align: center;
+}
+
+/* Adaptive */
+
+@media (max-width:1270px){
+
+    .innerCollector__image{
+        font-size:0.9rem;
+    }
+}
+
+@media (max-width:1180px){
+
+    .innerCollector__image{
+        font-size:0.8rem;
+    }
+    
+    .innerCollector__points-button__arrow{
+        width:1.5em;
+        height:1.5em;
+    }
+}
+
+@media (max-width:1080px){
+
+    .innerCollector{
+        font-size:0.9rem;
+    }
+}
+
+@media (max-width:1030px){
+    .innerCollector{
+        font-size:0.8rem;
+    }
+
+    .innerCollector__image{
+        font-size:0.7rem;
+    }
+}
+
+@media (max-width:930px){
+    .innerCollector{
+        font-size:0.7rem;
+    }
+
+    .innerCollector__image{
+        font-size:0.6rem;
+    }
+}
+
+@media (max-width:800px){
+    .innerCollector{
+        font-size:0.6rem;
+    }
+
+    .innerCollector__points-content{
+        font-size:1.3em;
+    }
+
+    .innerCollector__points-button{
+        padding: 1.3em 1em 1.3em 1.5em;
+    }
+
+    .innerCollector__image{
+        font-size:0.5rem;
+    }
+}
+
+@media (max-width:700px){
+    .innerCollector{
+        font-size:0.5rem;
+    }
+}
+
+@media (max-width:650px){
+    .innerCollector{
+        font-size:0.45rem;
+    }
+
+    .innerCollector__image{
+        font-size:0.45rem;
+    }
+}
+
+@media (max-width:580px){
+    .innerCollector{
+        font-size:0.8rem;
+    }
+
+    .innerCollector__image{
+        font-size:0.7rem;
+
+        object-fit:cover;
+        object-position: 25%;
+    }
+
+    .innerCollector__points > p{
+        display:none;
+    }
+
+    .buttonMore{
+        display:none;
+    }
+
+    .buttonLess{
+        display:block;
+    }
+
+    .innerCollectorFlex{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:500px){
+    .innerCollector{
+        font-size:0.7rem;
+    }
+
+    .innerCollector__image{
+        font-size:0.65rem;
+    }
+}
+
+@media (max-width:470px){
+    .innerCollector__image{
+        font-size:0.6rem;
+    }
+}
+
+@media (max-width:430px){
+    .innerCollector__image{
+        font-size:0.55rem;
+    }
+}
+
+@media (max-width:400px){
+    .innerCollector__image{
+        font-size:0.5rem;
+    }
+}
+
+
+
