@@ -11,6 +11,7 @@ import {addingGrowth, centerAlignment} from "./topCollections.js";
 import {resizeFooter} from "./footer.js";
 import { connectLink } from "./connectLink.js";
 import "./market.js"
+import "./../../general/src/gotoProduct.js";
  
 Main();
 

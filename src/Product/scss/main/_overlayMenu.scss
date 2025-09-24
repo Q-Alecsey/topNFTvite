@@ -1,0 +1,90 @@
+
+@use "/src/general/scss/utils";
+
+.overlay-menu{
+    font-size:1rem;
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    backdrop-filter: blur(8px);
+
+}
+
+.overlay-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform: translate(-50%, -50%);
+
+    width:25em;
+
+    background-color: #fff;
+    border-radius: 1.3em;
+    outline:2px solid utils.$almost-black;
+}
+
+.overlay-container{
+    max-width: 300px;
+
+    padding: 1.1em;
+    margin-inline:auto;
+}
+
+.overlay-content__title{
+    margin-top: 1em;
+
+    @include utils.getFont(Poppins, 1.3em, 600, 1.5);
+}
+
+.overlay-content__currentdate{
+    @include utils.getFont(Poppins, 0.8em, 300, 1.3);
+}
+
+.verification-title{
+
+    margin-top: 0.5em;
+
+    @include utils.getFont(Poppins, 2em, 600, 1.3);
+    color:red;
+
+    text-align: center;
+
+    &::after{
+        content: url("/public/product/smiley.png");
+    }
+
+}
+
+.verification-registration{
+    margin-top: 3px;
+
+    display:block;
+    width:100%;
+
+    padding-block:0.8em;
+
+    @include utils.getFont(Poppins, 0.8em, 500, 1.3);
+
+    color:#fff;
+    background-color: utils.$almost-black;
+
+    border-radius:1em;
+    border:1px solid utils.$almost-black;
+
+    transition: 0.5s ease;
+
+    &:hover{
+        color:utils.$almost-black;
+        background-color: #fff;
+    }
+}
+
+.verification-close{
+    @extend .verification-registration;
+}

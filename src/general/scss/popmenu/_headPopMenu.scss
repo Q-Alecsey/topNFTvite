@@ -1,0 +1,74 @@
+
+@use "./../utils";
+
+.popup-menu{
+    font-size:1rem;
+
+    display:block;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100vw;
+    height:100vh;
+    padding-top:15px;
+
+    z-index:300;
+
+    background-color: #F9F9F9;
+
+    transform: translateX(100vw);
+
+    transition: 0.5s ease-in-out;
+}
+
+.popup-menu--actived{
+    display:block;
+
+    transform:translateX(0);
+}
+
+.popup-menu-btn{
+    display:flex;
+    justify-content:end;
+
+    margin-bottom:5vh;
+}
+
+.popup-menu__button svg{
+    border:1px solid grey;
+    border-radius: 50%;
+}
+
+.popup__nav{
+    border:1px solid grey;
+    border-radius: 30px;
+}
+
+.popup-menu__items{
+    display:flex;
+    flex-direction: column;
+    height:60vh;
+
+    justify-content: center;
+    align-items: center;
+
+    gap:2em;
+}
+
+.popup-menu__item-link{
+    @include utils.getFont(Poppins, 1.5em, 600, 1.3);
+
+    color:#000000;
+    background: linear-gradient(utils.$almost-black, utils.$almost-black)
+        no-repeat right 50% bottom / 0% 1.5px;
+
+    transition: 0.5s ease;
+}
+
+.popup-menu__item-link:hover{
+    background: linear-gradient(utils.$almost-black, utils.$almost-black)
+        no-repeat right 50% bottom / 100% 1.5px;
+}
+

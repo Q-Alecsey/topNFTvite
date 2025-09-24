@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.png" type="image/x-icon">
+
+    <script src="/src/Product/source/loadNFT.js" preload></script>
     <title>DiveSea</title>
 </head>
 
@@ -41,7 +43,7 @@
         <nav class="header__nav">
             <ul class="header__items">
                 <li class="header__item">
-                    <a href="#discover" class="header__link header__link--first">DISCOVER</a>
+                    <a href="#discover" class="header__link">DISCOVER</a>
                 </li>
 
                 <li class="header__item">
@@ -77,9 +79,7 @@
             <div class="popup-menu-btn">
                 <button type="button" class="popup-menu__button">
                     <svg width="43" height="43" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M22.6066 21.3934C22.2161 21.0029 21.5829 21.0029 21.1924 21.3934C20.8019 21.7839 20.8019 22.4171 21.1924 22.8076L22.6066 21.3934ZM40.9914 42.6066C41.3819 42.9971 42.0151 42.9971 42.4056 42.6066C42.7961 42.2161 42.7961 41.5829 42.4056 41.1924L40.9914 42.6066ZM21.1924 41.1924C20.8019 41.5829 20.8019 42.2161 21.1924 42.6066C21.5829 42.9971 22.2161 42.9971 22.6066 42.6066L21.1924 41.1924ZM42.4056 22.8076C42.7961 22.4171 42.7961 21.7839 42.4056 21.3934C42.0151 21.0029 41.3819 21.0029 40.9914 21.3934L42.4056 22.8076ZM21.1924 22.8076L40.9914 42.6066L42.4056 41.1924L22.6066 21.3934L21.1924 22.8076ZM22.6066 42.6066L42.4056 22.8076L40.9914 21.3934L21.1924 41.1924L22.6066 42.6066Z"
-                            fill="black" />
+                        <path d="M22.6066 21.3934C22.2161 21.0029 21.5829 21.0029 21.1924 21.3934C20.8019 21.7839 20.8019 22.4171 21.1924 22.8076L22.6066 21.3934ZM40.9914 42.6066C41.3819 42.9971 42.0151 42.9971 42.4056 42.6066C42.7961 42.2161 42.7961 41.5829 42.4056 41.1924L40.9914 42.6066ZM21.1924 41.1924C20.8019 41.5829 20.8019 42.2161 21.1924 42.6066C21.5829 42.9971 22.2161 42.9971 22.6066 42.6066L21.1924 41.1924ZM42.4056 22.8076C42.7961 22.4171 42.7961 21.7839 42.4056 21.3934C42.0151 21.0029 41.3819 21.0029 40.9914 21.3934L42.4056 22.8076ZM21.1924 22.8076L40.9914 42.6066L42.4056 41.1924L22.6066 21.3934L21.1924 22.8076ZM22.6066 42.6066L42.4056 22.8076L40.9914 21.3934L21.1924 41.1924L22.6066 42.6066Z" fill="black"/>
                     </svg>
                 </button>
             </div>
@@ -100,7 +100,7 @@
                     <li class="popup-menu__item">
                         <a href="#stats" class="popup-menu__item-link">Stats</a>
                     </li>
-
+                    
                     <li class="popup-menu__item">
                         <a href="#" class="popup-menu__item-link">Connect Wallet</a>
                     </li>
@@ -110,267 +110,94 @@
     </div>
 
     <main class="main">
-        <article class="discoverNFT container">
-            <h2 class="discover__title">Discover NFTs</h2>
-            <section class="discover__options">
-                <button class="discover__options-button discover__options-button--tablet">Category</button>
-                <button class="discover__options-button discover__options-button--voice">Collection</button>
-                <button class="discover__options-button discover__options-button--dollar">Price</button>
-            </section>
-
-            <div class="discover__menu">
-
-                <section class="card">
-                
-                    <div class="card__img">
-                        <img src="/mainPage/main/market/NFT2.jpg" 
-                        srcset="/mainPage/main/market/NFT2@2x.jpg 2x" alt="NFT2">
-                        <p class="card__img-time">Loading...</p>
-                    </div>
-                
-                    <h2 class="card__title">Sun-Glass</h2>
-                
-                    <div class="card__content">
-                        <div class="card__content-group">
-                            <h4 class="card__content-group__inscription">Current bid</h4>
-                            <p class="card__content-group__bid">1.69</p>
-                        </div>
-                        <button class="card__content-button">place bid</button>
-                    </div>
-                
+        <div class="container">
+            <article class="product">
+                <section class="product__detail">
+                    <a href="#" class="product__detail-button"></a>
+                    <h2 class="product__detail-title">Product Detail</h2>
                 </section>
+                <section class="project">
+                    <img src=""
+                    srcset="" alt="img" class="project__img">
+                    <div class="project__info">
 
-                <section class="card">
-                
-                    <div class="card__img">
-                        <img src="/mainPage/main/market/NFT1.jpg" 
-                        srcset="/mainPage/main/market/NFT1@2x.jpg 2x" alt="NFT2">
-                        <p class="card__img-time">Loading...</p>
-                    </div>
-                
-                    <h2 class="card__title">Gradient</h2>
-                
-                    <div class="card__content">
-                        <div class="card__content-group">
-                            <h4 class="card__content-group__inscription">Current bid</h4>
-                            <p class="card__content-group__bid">1.75</p>
-                        </div>
-                        <button class="card__content-button">place bid</button>
-                    </div>
-                
-                </section>
+                        <h2 class="project__info-title">Project</h2>
+                        <p class="project__info-description">
+                            A collection of 10,000 
+                            utility-enabled PFPs that feature a richly diverse 
+                            and unique pool of rarity-powered traits. 
+                        </p>
+                        
+                        <div class="project__info-creatorOwner">
 
-                <section class="card">
-                
-                    <div class="card__img">
-                        <img src="/mainPage/main/market/NFT3.jpg" 
-                        srcset="/mainPage/main/market/NFT3@2x.jpg 2x" alt="NFT2">
-                        <p class="card__img-time">Loading...</p>
-                    </div>
-                
-                    <h2 class="card__title">Red Sand</h2>
-                
-                    <div class="card__content">
-                        <div class="card__content-group">
-                            <h4 class="card__content-group__inscription">Current bid</h4>
-                            <p class="card__content-group__bid">1.44</p>
-                        </div>
-                        <button class="card__content-button">place bid</button>
-                    </div>
-                
-                </section>
+                            <div class="project__info-creater">
+                                <img src="" 
+                                srcset="" class="creater__img">
+                                <div class="creater__info">
+                                    <span class="creater__info-title">Creater by</span>
+                                    <h3 class="creater__info-nick"></h3>
+                                </div>
+                            </div>
 
-                <section class="card">
-                
-                    <div class="card__img">
-                        <img src="/mainPage/main/market/NFT5.jpg" 
-                        srcset="/mainPage/main/market/NFT5@2x.jpg 2x" alt="NFT2">
-                        <p class="card__img-time">Loading...</p>
-                    </div>
-                
-                    <h2 class="card__title">Neptyn</h2>
-                
-                    <div class="card__content">
-                        <div class="card__content-group">
-                            <h4 class="card__content-group__inscription">Current bid</h4>
-                            <p class="card__content-group__bid">1.93</p>
-                        </div>
-                        <button class="card__content-button">place bid</button>
-                    </div>
-                
-                </section>
+                            <div class="project__info-owner">
+                                <img src="" 
+                                srcset="" class="owner__img">
+                                <div class="owner__info">
+                                    <span class="owner__info-title">Owned by</span>
+                                    <h3 class="owner__info-nick"></h3>
+                                </div>
+                            </div>
 
-                <section class="card">
-                
-                    <div class="card__img">
-                        <img src="/mainPage/main/market/NFT4.jpg" 
-                        srcset="/mainPage/main/market/NFT4@2x.jpg 2x" alt="NFT2">
-                        <p class="card__img-time">Loading...</p>
-                    </div>
-                
-                    <h2 class="card__title">NuEvey</h2>
-                
-                    <div class="card__content">
-                        <div class="card__content-group">
-                            <h4 class="card__content-group__inscription">Current bid</h4>
-                            <p class="card__content-group__bid">1.79</p>
                         </div>
-                        <button class="card__content-button">place bid</button>
-                    </div>
-                
-                </section>
 
-                <section class="card">
-                
-                    <div class="card__img">
-                        <img src="/mainPage/main/market/NFT6.jpg" 
-                        srcset="/mainPage/main/market/NFT6@2x.jpg 2x" alt="NFT2">
-                        <p class="card__img-time">Loading...</p>
-                    </div>
-                
-                    <h2 class="card__title">Space</h2>
-                
-                    <div class="card__content">
-                        <div class="card__content-group">
-                            <h4 class="card__content-group__inscription">Current bid</h4>
-                            <p class="card__content-group__bid">1.50</p>
-                        </div>
-                        <button class="card__content-button">place bid</button>
-                    </div>
-                
-                </section>
+                        <div class="project__info-bidtime">
+                            <div class="project__info-bid">
+                                <span class="bid__info">Current Bid</span>
+                                <h4 class="bid__current"></h4>
+                            </div>
 
-                <section class="card">
-                
-                    <div class="card__img">
-                        <img src="/mainPage/main/market/NFT3.jpg" 
-                        srcset="/mainPage/main/market/NFT3@2x.jpg 2x" alt="NFT2">
-                        <p class="card__img-time">Loading...</p>
-                    </div>
-                
-                    <h2 class="card__title">Red Sand</h2>
-                
-                    <div class="card__content">
-                        <div class="card__content-group">
-                            <h4 class="card__content-group__inscription">Current bid</h4>
-                            <p class="card__content-group__bid">1.44</p>
+                            <div class="project__info-time">
+                                <span class="time__info">End in</span>
+                                <h4 class="time__end"></h4>
+                            </div>
                         </div>
-                        <button class="card__content-button">place bid</button>
-                    </div>
-                
-                </section>
 
-                <section class="card">
-                
-                    <div class="card__img">
-                        <img src="/mainPage/main/market/NFT2.jpg" 
-                        srcset="/mainPage/main/market/NFT2@2x.jpg 2x" alt="NFT2">
-                        <p class="card__img-time">Loading...</p>
-                    </div>
-                
-                    <h2 class="card__title">Sun-Glass</h2>
-                
-                    <div class="card__content">
-                        <div class="card__content-group">
-                            <h4 class="card__content-group__inscription">Current bid</h4>
-                            <p class="card__content-group__bid">1.69</p>
-                        </div>
-                        <button class="card__content-button">place bid</button>
-                    </div>
-                
-                </section>
+                        <button class="project__button">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.739747 3.10639C0.739747 2.3746 1.02399 1.67278 1.52995 1.15533C2.0359 0.637871 2.72213 0.347168 3.43766 0.347168H16.6819C17.3975 0.347168 18.0837 0.637871 18.5897 1.15533C19.0956 1.67278 19.3799 2.3746 19.3799 3.10639V4.36861C20.3111 4.43225 21.1839 4.85549 21.8214 5.55262C22.459 6.24974 22.8136 7.16863 22.8136 8.12317V18.6584C22.8136 19.6563 22.426 20.6133 21.736 21.3189C21.0461 22.0246 20.1103 22.421 19.1346 22.421H4.42264C3.44692 22.421 2.51116 22.0246 1.82122 21.3189C1.13128 20.6133 0.743672 19.6563 0.743672 18.6584V8.12317H0.739747V3.35723H0.750539C0.743269 3.27383 0.739668 3.19013 0.739747 3.10639ZM17.9083 3.10639C17.9083 2.41408 17.3589 1.8522 16.6819 1.8522H3.43766C3.11242 1.8522 2.8005 1.98434 2.57052 2.21955C2.34054 2.45475 2.21133 2.77376 2.21133 3.10639C2.21133 3.43903 2.34054 3.75804 2.57052 3.99324C2.8005 4.22845 3.11242 4.36059 3.43766 4.36059H17.9083V3.10639ZM16.1914 13.3908C15.9963 13.3908 15.8091 13.4701 15.6711 13.6112C15.5331 13.7523 15.4556 13.9437 15.4556 14.1433C15.4556 14.3429 15.5331 14.5343 15.6711 14.6754C15.8091 14.8165 15.9963 14.8958 16.1914 14.8958H18.6441C18.8392 14.8958 19.0264 14.8165 19.1643 14.6754C19.3023 14.5343 19.3799 14.3429 19.3799 14.1433C19.3799 13.9437 19.3023 13.7523 19.1643 13.6112C19.0264 13.4701 18.8392 13.3908 18.6441 13.3908H16.1914Z" fill="white"/>
+                            </svg>
+                            Place Bid
+                        </button>
 
-                <section class="card">
-                
-                    <div class="card__img">
-                        <img src="/mainPage/main/market/NFT5.jpg" 
-                        srcset="/mainPage/main/market/NFT5@2x.jpg 2x" alt="NFT2">
-                        <p class="card__img-time">Loading...</p>
                     </div>
-                
-                    <h2 class="card__title">Neptyn</h2>
-                
-                    <div class="card__content">
-                        <div class="card__content-group">
-                            <h4 class="card__content-group__inscription">Current bid</h4>
-                            <p class="card__content-group__bid">1.93</p>
-                        </div>
-                        <button class="card__content-button">place bid</button>
-                    </div>
-                
                 </section>
+            </article>
 
-                <section class="card">
-                
-                    <div class="card__img">
-                        <img src="/mainPage/main/market/NFT1.jpg" 
-                        srcset="/mainPage/main/market/NFT1@2x.jpg 2x" alt="NFT2">
-                        <p class="card__img-time">Loading...</p>
-                    </div>
-                
-                    <h2 class="card__title">Gradient</h2>
-                
-                    <div class="card__content">
-                        <div class="card__content-group">
-                            <h4 class="card__content-group__inscription">Current bid</h4>
-                            <p class="card__content-group__bid">1.75</p>
-                        </div>
-                        <button class="card__content-button">place bid</button>
-                    </div>
-                
-                </section>
+            <article class="overlay-menu">
+                <div class="overlay-content overlay-container">
+                    <h2 class="overlay-content__title">History of Bid</h2>
+                    <span class="overlay-content__currentdate"></span>
 
-                <section class="card">
-                
-                    <div class="card__img">
-                        <img src="/mainPage/main/market/NFT4.jpg" 
-                        srcset="/mainPage/main/market/NFT4@2x.jpg 2x" alt="NFT2">
-                        <p class="card__img-time">Loading...</p>
+                    <div class="verification">
+                        <h2 class="verification-title">
+                            You are not registered
+                        </h2>
+                        <button class="verification-registration">Registration</button>
+                        <button class="verification-close">Close</button>
                     </div>
-                
-                    <h2 class="card__title">NuEvey</h2>
-                
-                    <div class="card__content">
-                        <div class="card__content-group">
-                            <h4 class="card__content-group__inscription">Current bid</h4>
-                            <p class="card__content-group__bid">1.79</p>
-                        </div>
-                        <button class="card__content-button">place bid</button>
-                    </div>
-                
-                </section>
 
-                <section class="card">
-                
-                    <div class="card__img">
-                        <img src="/mainPage/main/market/NFT6.jpg" 
-                        srcset="/mainPage/main/market/NFT6@2x.jpg 2x" alt="NFT2">
-                        <p class="card__img-time">Loading...</p>
-                    </div>
-                
-                    <h2 class="card__title">Space</h2>
-                
-                    <div class="card__content">
-                        <div class="card__content-group">
-                            <h4 class="card__content-group__inscription">Current bid</h4>
-                            <p class="card__content-group__bid">1.50</p>
-                        </div>
-                        <button class="card__content-button">place bid</button>
-                    </div>
-                
-                </section>
-            </div>
-            
-            <div class="discover__loading"> 
-                <img src="/public/discoverNFT/Loading.svg" class="spin" alt="">
-            </div>
-        </article>
+                    <section class="overlay-content__history">
+                        
+                    </section>
+                </div>
+            </article>
+        </div>
     </main>
 
     <footer class="footer">
         <div class="container footer__up">
-            <a href="/index.html" class="footer__up-logo">
-                <svg width="65" height="65" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="#" class="footer__up-logo">
+                <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M46.9274 36.1279C44.9841 36.1279 44.1228 35.377 42.9082 34.317C41.5611 33.1687 39.8828 31.7112 36.7249 31.7112C33.5449 31.7112 31.8886 33.1687 30.5415 34.317C29.327 35.377 28.4437 36.1279 26.5003 36.1279C24.5791 36.1279 23.6957 35.377 22.4811 34.317C21.1341 33.1687 19.4558 31.7112 16.2978 31.7112C13.1178 31.7112 11.4395 33.1687 10.0924 34.317C8.87784 35.377 8.01658 36.1279 6.07324 36.1279C5.16783 36.1279 4.41699 36.8787 4.41699 37.7841C4.41699 38.7116 5.16783 39.4404 6.07324 39.4404C9.25324 39.4404 10.9095 38.0049 12.2565 36.8345C13.4711 35.7745 14.3545 35.0237 16.2978 35.0237C18.2412 35.0237 19.1024 35.7745 20.317 36.8345C21.6641 38.0049 23.3424 39.4404 26.5003 39.4404C29.6803 39.4404 31.3587 38.0049 32.7057 36.8345C33.9203 35.7745 34.7816 35.0237 36.7249 35.0237C38.6462 35.0237 39.5295 35.7745 40.7441 36.8345C42.0912 38.0049 43.7695 39.4404 46.9274 39.4404C47.8328 39.4404 48.5837 38.7116 48.5837 37.7841C48.5837 36.8787 47.8328 36.1279 46.9274 36.1279Z" fill="#ffffff"/>
                     <path d="M46.9274 27.0307C44.9841 27.0307 44.1228 26.2578 42.9082 25.2198C41.5611 24.0494 39.8828 22.614 36.7249 22.614C33.5449 22.614 31.8886 24.0494 30.5415 25.2198C29.327 26.2578 28.4437 27.0307 26.5003 27.0307C24.5791 27.0307 23.6957 26.2578 22.4811 25.2198C21.1341 24.0494 19.4558 22.614 16.2978 22.614C13.1178 22.614 11.4395 24.0494 10.0924 25.2198C8.87784 26.2578 8.01658 27.0307 6.07324 27.0307C5.16783 27.0307 4.41699 27.7594 4.41699 28.6869C4.41699 29.5923 5.16783 30.3432 6.07324 30.3432C9.25324 30.3432 10.9095 28.8857 12.2565 27.7153C13.4711 26.6773 14.3545 25.9265 16.2978 25.9265C18.2412 25.9265 19.1024 26.6773 20.317 27.7153C21.6641 28.8857 23.3424 30.3432 26.5003 30.3432C29.6803 30.3432 31.3587 28.8857 32.7057 27.7153C33.9203 26.6773 34.7816 25.9265 36.7249 25.9265C38.6462 25.9265 39.5295 26.6773 40.7441 27.7153C42.0912 28.8857 43.7695 30.3432 46.9274 30.3432C47.8328 30.3432 48.5837 29.5923 48.5837 28.6869C48.5837 27.7594 47.8328 27.0307 46.9274 27.0307Z" fill="#ffffff"/>
                     <path d="M6.07324 21.2885C9.25324 21.2885 10.9095 19.831 12.2565 18.6827C13.4711 17.6227 14.3545 16.8718 16.2978 16.8718C18.2412 16.8718 19.1024 17.6227 20.317 18.6827C21.6641 19.831 23.3424 21.2885 26.5003 21.2885C29.6803 21.2885 31.3587 19.831 32.7057 18.6827C33.9203 17.6227 34.7816 16.8718 36.7249 16.8718C38.6462 16.8718 39.5295 17.6227 40.7441 18.6827C42.0912 19.831 43.7695 21.2885 46.9274 21.2885C47.8328 21.2885 48.5837 20.5377 48.5837 19.6322C48.5837 18.7047 47.8328 17.976 46.9274 17.976C44.9841 17.976 44.1228 17.2252 42.9082 16.1652C41.5611 14.9947 39.8828 13.5593 36.7249 13.5593C33.5449 13.5593 31.8886 14.9947 30.5415 16.1652C29.327 17.2252 28.4437 17.976 26.5003 17.976C24.5791 17.976 23.6957 17.2252 22.4811 16.1652C21.1341 14.9947 19.4558 13.5593 16.2978 13.5593C13.1178 13.5593 11.4395 14.9947 10.0924 16.1652C8.87784 17.2252 8.01658 17.976 6.07324 17.976C5.16783 17.976 4.41699 18.7047 4.41699 19.6322C4.41699 20.5377 5.16783 21.2885 6.07324 21.2885Z" fill="#ffffff"/>
@@ -442,7 +269,5 @@
         </div>
     </footer>
 
-    <script type="module" src="./discoverSrc/source/base.js"></script>
-</body>
-
-</html>
+    <script type="module" src="./source/base.js"></script>
+<body>

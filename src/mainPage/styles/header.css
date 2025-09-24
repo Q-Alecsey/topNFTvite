@@ -64,6 +64,30 @@
     color:#606060;
 }
 
+.header__login{
+    background-color: var(--almost-black);
+    color:#fff;
+
+    border-radius: 1em;
+    border:2px solid var(--almost-black);
+
+    padding:0.9em 3em;
+
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 1.5;
+
+    white-space:nowrap;
+
+    transition: 600ms ease;
+}
+
+.header__login:hover{
+    background-color: #fff;
+    color:var(--almost-black);
+}
+
 .header__search{
     position:relative;
     font-size: 0.9em;

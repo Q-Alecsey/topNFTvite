@@ -1,0 +1,220 @@
+@use "/src/general/scss/utils";
+
+.main {
+    padding-block:100px;
+
+    position: relative;
+}
+
+.product{
+    font-size:1rem;
+}
+
+.product__detail-button {
+    display: inline-block;
+
+    width: 2em;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    vertical-align: top;
+
+    background: url("/public/product/arrow.svg") no-repeat center center;
+
+    background-color: #E6E8EC;
+
+    &:hover {
+        background-color: #b2b2b2;
+    }
+}
+
+.product__detail-title {
+    @include utils.getFont(Poppins, 2em, 600, 0.9);
+
+    display: inline;
+    margin-left: 30px;
+}
+
+
+//////////////////
+
+.project {
+    margin-top: 55px;
+    padding: 2.1em;
+
+    display:flex;
+    justify-content: space-between;
+
+    gap:8em;
+
+    border-radius: 1.5em;
+    box-shadow: 2px 4px 10px 0px rgba(34, 60, 80, 0.21);
+}
+
+.project__img {
+    width:27em;
+    height:27em;
+    aspect-ratio: 1 / 1;
+
+    border-radius: 1.5em;
+}
+
+.project__info {
+
+}
+
+.project__info-title {
+    @include utils.getFont(Poppins, 2.5em, 600, 1.7);
+    
+    color:#292B39;
+}
+
+.project__info-description {
+
+    @include utils.getFont(Poppins, 1em, 400, 1.55);
+
+    color:#888888B2;
+}
+
+.project__info-creatorOwner{
+    margin-top: 40px;
+
+    display:flex;
+    justify-content: space-between;
+}
+
+.project__info-creater {
+    display:flex;
+    align-items: center;
+}
+
+.creater__img {
+    width:4em;
+    aspect-ratio: 1;
+}
+
+.creater__info {
+    margin-left: 20px;
+}
+
+.creater__info-title {
+    @include utils.getFont(Poppins, 1.1em, 400, 1);
+
+    color:#8D8D8D;
+}
+
+.creater__info-nick {
+    @include utils.getFont(Poppins, 1.6em, 500, 1.6);
+    
+    color:#000;
+}
+
+.project__info-owner {
+    @extend .project__info-creater;
+}
+
+.owner__img {
+    @extend .creater__img;
+}
+
+.owner__info {
+    @extend .creater__info;
+}
+
+.owner__info-title {
+    @extend .creater__info-title;
+}
+
+.owner__info-nick {
+    @extend .creater__info-nick;
+}
+
+.project__info-bidtime {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 3em;
+}
+
+.bid__info {
+    @include utils.getFont(Poppins, 1.1em, 400, 1.2);
+
+    color:#8C8C8C;
+}
+
+.bid__current {
+    margin-top: 0.3em;
+
+    @include utils.getFont(Poppins, 2em, 600, 1);
+
+    color:#292B39;
+
+    &::before{
+        content:"";
+
+        display:inline-block;
+
+        width:1em;
+        height:1em;
+
+        background: url("/public/mainPage/main/market/current_bid.svg")
+        no-repeat center / 0.8em 0.8em;
+
+        vertical-align: top;
+
+    }
+}
+
+.time__info {
+    @extend .bid__info;
+
+    display:block;
+
+    text-align: right;
+}
+
+.time__end {
+    @include utils.getFont(Poppins, 1.2em, 400, 1.5);
+
+    margin-top: 1em;
+    
+    color:#000;
+}
+
+.project__button {
+    margin-top:1.5em;
+
+    display:block;
+    width:100%;
+
+    padding-block:1em;
+
+    @include utils.getFont(Poppins, 1.2em, 700, 1.55);
+
+    color:#fff;
+    background-color: utils.$almost-black;
+
+    border: 1px solid utils.$almost-black;
+    border-radius: 1.25em;
+
+    transition: 0.5s ease;
+    
+    & svg {
+        margin-right:5px;
+        vertical-align: sub;
+
+        & *{
+            transition: 0.5s ease;
+        }
+    }
+    
+    &:hover{
+        color: utils.$almost-black;
+        background-color: #fff;
+
+        & svg *{
+            fill:utils.$almost-black;
+        }
+    }
+}

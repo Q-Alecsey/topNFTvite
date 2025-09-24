@@ -1,0 +1,123 @@
+
+{
+
+    "Sun-Glass" : {
+        "bid" : 1.69,
+        "endIn" : "Jun 17, 2023 at 05:08",
+        "timer": 35000,
+        "link":"/public/mainPage/main/market/NFT2.jpg",
+        "link2x":"/public/mainPage/main/market/NFT2@2x.jpg",
+
+        "creater" : {
+            "nick": "Perperzon",
+            "avatarLink" : "/public/avatars/avatar1.jpg",
+            "avatarLink2x" : "/public/avatars/avatar1@2x.jpg"
+        },
+
+        "owner": {
+            "nick": "Videz",
+            "avatarLink" : "/public/avatars/avatar2.jpg",
+            "avatarLink2x" : "/public/avatars/avatar2@2x.jpg"
+        }
+    },
+
+    "Gradient" : {
+        "bid" : 1.75,
+        "endIn" : "Jun 14, 2023 at 12:56",
+        "timer": 21000,
+        "link":"/public/mainPage/main/market/NFT1.jpg",
+        "link2x":"/public/mainPage/main/market/NFT1@2x.jpg",
+
+        "creater" : {
+            "nick": "Loydd",
+            "avatarLink" : "/public/avatars/avatar1.jpg",
+            "avatarLink2x" : "/public/avatars/avatar1@2x.jpg"
+        },
+
+        "owner": {
+            "nick": "Moukx",
+            "avatarLink" : "/public/avatars/avatar2.jpg",
+            "avatarLink2x" : "/public/avatars/avatar2@2x.jpg"
+        }
+    },
+
+    "Red Sand": {
+        "bid" : 1.44,
+        "endIn" : "Jun 17, 2023 at 10:10",
+        "timer": 45542,
+        "link":"/public/mainPage/main/market/NFT3.jpg",
+        "link2x":"/public/mainPage/main/market/NFT3@2x.jpg",
+
+        "creater" : {
+            "nick": "Quick",
+            "avatarLink" : "/public/avatars/avatar1.jpg",
+            "avatarLink2x" : "/public/avatars/avatar1@2x.jpg"
+        },
+
+        "owner": {
+            "nick": "Koj",
+            "avatarLink" : "/public/avatars/avatar2.jpg",
+            "avatarLink2x" : "/public/avatars/avatar2@2x.jpg"
+        }
+    },
+
+    "NuEvey": {
+        "bid": 1.79,
+        "endIn": "Jun 15, 2023 at 12:45",
+        "timer": 13253,
+        "link":"/public/mainPage/main/market/NFT4.jpg",
+        "link2x":"/public/mainPage/main/market/NFT4@2x.jpg",
+
+        "creater" : {
+            "nick": "Noul",
+            "avatarLink" : "/public/avatars/avatar1.jpg",
+            "avatarLink2x" : "/public/avatars/avatar1@2x.jpg"
+        },
+
+        "owner": {
+            "nick": "Dize",
+            "avatarLink" : "/public/avatars/avatar2.jpg",
+            "avatarLink2x" : "/public/avatars/avatar2@2x.jpg"
+        }
+    },
+
+    "Neptyn":{
+        "bid" : 1.93,
+        "endIn" : "Jun 15, 2023 at 09:00",
+        "timer": 35423,
+        "link":"/public/mainPage/main/market/NFT5.jpg",
+        "link2x":"/public/mainPage/main/market/NFT5@2x.jpg",
+
+        "creater" : {
+            "nick": "Enjoy",
+            "avatarLink" : "/public/avatars/avatar1.jpg",
+            "avatarLink2x" : "/public/avatars/avatar1@2x.jpg"
+        },
+
+        "owner": {
+            "nick": "Toni",
+            "avatarLink" : "/public/avatars/avatar2.jpg",
+            "avatarLink2x" : "/public/avatars/avatar2@2x.jpg"
+        }
+    },
+
+    "Space":{
+        "bid" : 1.50,
+        "endIn" : "Jun 17, 2023 at 23:31",
+        "timer": 56324,
+        "link":"/public/mainPage/main/market/NFT6.jpg",
+        "link2x":"/public/mainPage/main/market/NFT6@2x.jpg",
+
+        "creater" : {
+            "nick": "Larri",
+            "avatarLink" : "/public/avatars/avatar1.jpg",
+            "avatarLink2x" : "/public/avatars/avatar1@2x.jpg"
+        },
+
+        "owner": {
+            "nick": "Wwiz",
+            "avatarLink" : "/public/avatars/avatar2.jpg",
+            "avatarLink2x" : "/public/avatars/avatar2@2x.jpg"
+        }
+    }
+}
